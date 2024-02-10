@@ -1,0 +1,36 @@
+Screen1 As screen:
+
+    loc As text:
+        Default: =""
+        OnChange: |-
+            =UpdateContext({localvar:loc.Text})
+        X: =48
+        Y: =132
+        ZIndex: =1
+
+    Label1 As label:
+        Text: =localvar
+        X: =550
+        Y: =132
+        ZIndex: =2
+
+    TextInput2 As text:
+        Default: ="Text input"
+        OnChange: =Set(GlobarVar,TextInput2.Text)
+        X: =48
+        Y: =316
+        ZIndex: =3
+
+    Label3 As label:
+        Text: =GlobarVar
+        X: =550
+        Y: =316
+        ZIndex: =4
+
+    Button2 As button:
+        OnSelect: =Navigate(Screen2)
+        Text: ="Button"
+        X: =879
+        Y: =327
+        ZIndex: =5
+

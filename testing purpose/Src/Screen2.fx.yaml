@@ -1,0 +1,15 @@
+Screen2 As screen:
+
+    Label2 As label:
+        Text: =GlobarVar
+        X: =207
+        Y: =291
+        ZIndex: =1
+
+    Button1 As button:
+        OnSelect: =Navigate(Screen1)
+        Text: ="Button"
+        X: =1149
+        Y: =123
+        ZIndex: =2
+

@@ -1,0 +1,28 @@
+Screen3 As screen:
+
+    FirstName As text:
+        Default: =""
+        HintText: ="FirstName"
+        X: =111
+        Y: =144
+        ZIndex: =1
+
+    LastName As text:
+        Default: =""
+        HintText: ="LastName"
+        X: =111
+        Y: =264
+        ZIndex: =2
+
+    Collect As button:
+        OnSelect: |+
+            =//Collect(Items,{FirstName:FirstName.Text,Lastname:LastName.Text});
+            
+            ClearCollect(Items,{FirstName:FirstName.Text,LastName:LastName.Text})
+            
+            
+        Text: ="Button"
+        X: =129
+        Y: =411
+        ZIndex: =3
+
